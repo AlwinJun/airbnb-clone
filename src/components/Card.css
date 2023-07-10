@@ -1,0 +1,39 @@
+.card {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* .card__img {
+  margin-bottom: 0.5rem;
+} */
+
+.card__content {
+  padding-inline: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.card__rating {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.card__rating-img {
+  height: 0.85rem;
+}
+
+.card__rating--gray {
+  color: #918e9b;
+}
+
+.card__rating-dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #918e9b;
+}
+
+.card__title {
+  font-weight: 400;
+}
