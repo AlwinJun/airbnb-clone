@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Popping', sans-serif;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: clamp(1rem, 5vw + 1rem, 2.5rem);
+}
+
