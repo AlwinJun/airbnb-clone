@@ -1,9 +1,28 @@
 import './Card.css';
 import star from '../assets/star.png';
 
-const Card = ({ img, imgAlt, rate, count, country, title, amount }) => {
+const Card = ({
+  img,
+  imgAlt,
+  rate,
+  count,
+  country,
+  title,
+  amount,
+  isAvailable,
+  meeting,
+}) => {
+  let badgeText;
+  if (isAvailable === 0) {
+    badgeText = 'SOLD OUT';
+  } else if (meeting === 'online') {
+    badgeText = 'ONLINE';
+  }
+
   return (
     <article className="card">
+      {/* If badgeText has value render badge */}
+      {badgeText && <div className="badge">{badgeText}</div>}
       <img src={img} className="card__img" alt={imgAlt} />
       <div className="card__content">
         <div className="card__rating">
