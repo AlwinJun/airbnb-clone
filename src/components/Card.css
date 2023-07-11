@@ -3,9 +3,10 @@
   gap: 0.5rem;
 }
 
-/* .card__img {
-  margin-bottom: 0.5rem;
-} */
+.card__img {
+  width: 176px;
+  height: 235px;
+}
 
 .card__content {
   padding-inline: 0.5rem;
