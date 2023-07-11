@@ -1,0 +1,13 @@
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 1rem;
+}
+
+@media (min-width: 45em) {
+  .cards-container {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
