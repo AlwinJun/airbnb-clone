@@ -5,7 +5,6 @@ import data from './data';
 import './App.css';
 
 function App() {
-  console.log(data);
   const cards = data.map((dataProps) => {
     const {
       id,
@@ -21,6 +20,7 @@ function App() {
 
     return (
       <Card
+        key={id}
         img={coverImg}
         imgAlt={imgAlt}
         rate={stats.rate}
@@ -36,7 +36,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {cards}
+      <section className="cards-container">{cards}</section>
     </>
   );
 }

@@ -3,7 +3,7 @@ import star from '../assets/star.png';
 
 const Card = ({ img, imgAlt, rate, count, country, title, amount }) => {
   return (
-    <section className="card">
+    <article className="card">
       <img src={img} className="card__img" alt={imgAlt} />
       <div className="card__content">
         <div className="card__rating">
@@ -22,7 +22,7 @@ const Card = ({ img, imgAlt, rate, count, country, title, amount }) => {
           <strong>From ${amount}</strong> / person
         </p>
       </div>
-    </section>
+    </article>
   );
 };
 
