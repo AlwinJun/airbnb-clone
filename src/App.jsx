@@ -14,7 +14,8 @@ function App() {
       coverImg,
       imgAlt,
       country,
-      openSlots,
+      openSpots,
+      meeting,
       stats = { rate, price },
     } = dataProps;
 
@@ -25,9 +26,11 @@ function App() {
         imgAlt={imgAlt}
         rate={stats.rate}
         count={stats.price}
+        meeting={meeting}
         country={country}
         title={title}
         amount={amount}
+        isAvailable={openSpots}
       />
     );
   });
