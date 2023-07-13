@@ -5,32 +5,12 @@ import data from './data';
 import './App.css';
 
 function App() {
-  const cards = data.map((dataProps) => {
-    const {
-      id,
-      title,
-      description,
-      amount,
-      coverImg,
-      imgAlt,
-      country,
-      openSpots,
-      meeting,
-      stats = { rate, price },
-    } = dataProps;
-
+  const cards = data.map((item) => {
     return (
       <Card
-        key={id}
-        img={coverImg}
-        imgAlt={imgAlt}
-        rate={stats.rate}
-        count={stats.price}
-        meeting={meeting}
-        country={country}
-        title={title}
-        amount={amount}
-        isAvailable={openSpots}
+        key={item.id}
+        // Passing props as an spread object
+        {...item}
       />
     );
   });
